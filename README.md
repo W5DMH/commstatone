@@ -1,6 +1,5 @@
-# commstatone
- # CommStatOne Ver 1.0.0 Released 02/26/23
-<h3 style="color: #4485b8;">CommStat One Ver 1.0.0 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatX/blob/main/CommStatXBeta.png?raw=true" alt="CommStat One Ver 1.0.0" width="300" height="170" /></h3>
+# CommStatOne Ver 0.097 Released 02/15/23
+<h3 style="color: #4485b8;">CommStat One Ver 0.097 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatX/blob/main/CommStatXBeta.png?raw=true" alt="CommStat One 0.097" width="300" height="170" /></h3>
 
 CommstatX is a Python version of the CommStat software <b>designed to run on on Win10 AND Linux</b><br>
 <br><br>
@@ -15,7 +14,7 @@ NOTE : Saavy users can "git clone https://github.com/W5DMH/commstatone.git"
  <b>Type : cd commstatone <br>
   Type : python install.py </b> (or use : python3 install.py  if necessary) <br>
  You should get your settings popup, complete the settings then :<br>
- <b>Type : python commstat.py    or    python3 commstat.py (if your system requires python3) <b> NOT commstatx.py this has changed to commstat.py</b> 
+ <b>Type : python commstatx.py    or    python3 commstatx.py (if your system requires python3) 
 
 <br>
  <br>
@@ -27,12 +26,12 @@ NOTE : Saavy users can "git clone https://github.com/W5DMH/commstatone.git"<br>
  type : ./linuxinstall.sh <br>
  enter your sudo password <br>
  After some installation you should get your settings popup, complete the settings then :<br>
- <b>Type : python commstat.py    or    python3 commstat.py (if your system requires python3) <b> NOT commstatx.py this has changed to commstat.py</b> 
+ <b>Type : python commstatx.py    or    python3 commstatx.py (if your system requires python3) 
 
 <br><br><br>
 =======
  
-<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/commstatone/raw/main/commstatone.zip" target="_blank" rel="noopener">CommStat One 1.0.0 for Win10 & Win11 & Linux </a></h3>
+<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/commstatone/raw/main/commstatone.zip" target="_blank" rel="noopener">CommStat One 0.097 for Win10 & Win11 & Linux </a></h3>
 
 
 
@@ -43,3 +42,5 @@ https://groups.io/g/CommStat
 
 I must give credit to m0iax for his JS8CallAPISupport Script as that is what makes the transmitting possible.See the rest of his JS8Call Tools here : https://github.com/m0iax
 <br>
+
+ 
