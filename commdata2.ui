@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1101</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Commstat Data Manager</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>USA-32.png</normaloff>USA-32.png</iconset>
+  </property>
+  <widget class="QWidget" name="gridLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>30</y>
+     <width>1011</width>
+     <height>731</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>20</number>
+    </property>
+    <property name="rightMargin">
+     <number>20</number>
+    </property>
+    <property name="horizontalSpacing">
+     <number>7</number>
+    </property>
+    <property name="verticalSpacing">
+     <number>9</number>
+    </property>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="pushButtonstate">
+      <property name="text">
+       <string>Grid Filter</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="labelDateStart">
+      <property name="text">
+       <string>Date / Time Start :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="8">
+     <widget class="QPushButton" name="pushButtonEX">
+      <property name="text">
+       <string>Export Data</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLabel" name="labelName">
+      <property name="text">
+       <string>Report Name :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QLineEdit" name="lineEditName"/>
+    </item>
+    <item row="1" column="6">
+     <widget class="QDateTimeEdit" name="dateTimeEditEnd">
+      <property name="displayFormat">
+       <string>M/d/yyyy h:mm Z</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="timeSpec">
+       <enum>Qt::UTC</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="7">
+     <widget class="QPushButton" name="pushButtonIM">
+      <property name="text">
+       <string>Import Data </string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="4">
+     <widget class="QCheckBox" name="checkBoxgreen">
+      <property name="text">
+       <string>Green</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="4">
+     <widget class="QDateTimeEdit" name="dateTimeEditStart">
+      <property name="displayFormat">
+       <string>M/d/yyyy h:mm Z</string>
+      </property>
+      <property name="calendarPopup">
+       <bool>true</bool>
+      </property>
+      <property name="timeSpec">
+       <enum>Qt::UTC</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="8">
+     <widget class="QPushButton" name="pushButtonPrint">
+      <property name="text">
+       <string>Build Report</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QWidget" name="widget" native="true"/>
+    </item>
+    <item row="1" column="7">
+     <widget class="QPushButton" name="pushButtonLoad">
+      <property name="text">
+       <string>Load Display</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="6">
+     <widget class="QCheckBox" name="checkBoxred">
+      <property name="text">
+       <string>Red</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="5">
+     <widget class="QCheckBox" name="checkBoxyellow">
+      <property name="text">
+       <string>Yellow</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QPushButton" name="pushButtonclosestate">
+      <property name="text">
+       <string>Select Grid(s)</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="5">
+     <widget class="QLabel" name="labelEnd">
+      <property name="text">
+       <string>Date / Time End :</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="0">
+     <widget class="QTableWidget" name="tableWidget"/>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pushButtonclearstate">
+      <property name="text">
+       <string>Clear Grid Filter</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="labelstates">
+      <property name="text">
+       <string>Grid Filter</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
