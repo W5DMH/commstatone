@@ -72,6 +72,12 @@
     </item>
     <item row="1" column="6">
      <widget class="QDateTimeEdit" name="dateTimeEditEnd">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="displayFormat">
        <string>M/d/yyyy h:mm Z</string>
       </property>
@@ -99,6 +105,12 @@
     </item>
     <item row="1" column="4">
      <widget class="QDateTimeEdit" name="dateTimeEditStart">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+        <horstretch>1</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="displayFormat">
        <string>M/d/yyyy h:mm Z</string>
       </property>
