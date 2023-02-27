@@ -411,59 +411,78 @@ class Ui_FormStatack(object):
             acklist = ""
             self.lineEdit.setText("")
             return
-        print (acklist)
-        print (selectedfwd)
-        conn = sqlite3.connect("traffic.db3")
-        cur = conn.cursor()
+        #print (acklist)
+        #print (selectedfwd)
+        #conn = sqlite3.connect("traffic.db3")
+        #cur = conn.cursor()
 
 
         #cur.execute(
         #    "INSERT INTO StatRep_Data(datetime,callsign,groupname, grid, SRid, prec,status, commpwr, pubwtr,med, ota, trav, net, fuel, food, crime, civil, political, comments) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
         #    (date, call, group, grid, incidenceno, prec2, status, commpwr, pubwtr, med, ota, trav, net, fuel, food,
         #     crime, civil, political, comments))
+        #rowsQuery = "DELETE FROM StatRep_Data Where SRid  = '" + selectedfwd + "'"
+        #cur.execute(rowsQuery)
+
+        conn = sqlite3.connect("traffic.db3")
+        cur = conn.cursor()
+
+        # cur.execute(
+        #    "INSERT INTO StatRep_Data(datetime,callsign,groupname, grid, SRid, prec,status, commpwr, pubwtr,med, ota, trav, net, fuel, food, crime, civil, political, comments) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
+        #    (date, call, group, grid, incidenceno, prec2, status, commpwr, pubwtr, med, ota, trav, net, fuel, food,
+        #     crime, civil, political, comments))
         rowsQuery = "DELETE FROM StatRep_Data Where SRid  = '" + selectedfwd + "'"
         cur.execute(rowsQuery)
+        conn.commit()
+        cur.close()
+        print("Deleted SR " + selectedfwd)
+        selectedfwd = ""
 
-        self.msgWarning = QMessageBox()
+        self.loadData()
+
+        conn.close()
+
+        #self.msgWarning = QMessageBox()
         # Set the Warning icon
-        self.msgWarning.setIcon(QMessageBox.Warning)
+        #self.msgWarning.setIcon(QMessageBox.Warning)
         # Set the main message
-        self.msgWarning.setText("You are about to permanently delete record :"+selectedfwd+" are you sure you want to continue ?")
+        #self.msgWarning.setText("You are about to permanently delete record :"+selectedfwd+" are you sure you want to continue ?")
         # Set two buttons for the message box
-        self.msgWarning.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
+        #self.msgWarning.setStandardButtons(QMessageBox.Ok | QMessageBox.Cancel)
         # Call the custom method on button clicked
-        self.msgWarning.buttonClicked.connect(self.msgButton)
+        #self.msgWarning.buttonClicked.connect(self.msgButton)
         # Set the title of the window
-        self.msgWarning.setWindowTitle("Warning Message")
+        #self.msgWarning.setWindowTitle("Warning Message")
         # Display the message box
-        self.msgWarning.show()
+        #self.msgWarning.show()
 
     # Define function for the buttons
-    def msgButton(self, i):
-        global selectedfwd
-        global acklist
-        global selectedgroup
-        if i.text() == 'OK':
-            print("OK Button is pressed.")
-            conn = sqlite3.connect("traffic.db3")
-            cur = conn.cursor()
+    #def msgButton(self, i):
+    #    global selectedfwd
+    #    global acklist
+    #    global selectedgroup
+    #    if i.text() == 'OK':
+    #        print("OK Button is pressed.")
+     #       conn = sqlite3.connect("traffic.db3")
+     #       cur = conn.cursor()
 
             # cur.execute(
             #    "INSERT INTO StatRep_Data(datetime,callsign,groupname, grid, SRid, prec,status, commpwr, pubwtr,med, ota, trav, net, fuel, food, crime, civil, political, comments) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)",
             #    (date, call, group, grid, incidenceno, prec2, status, commpwr, pubwtr, med, ota, trav, net, fuel, food,
             #     crime, civil, political, comments))
-            rowsQuery = "DELETE FROM StatRep_Data Where SRid  = '" + selectedfwd + "'"
-            cur.execute(rowsQuery)
-            conn.commit()
-            cur.close()
-            selectedfwd = ""
-            self.loadData()
+      #      rowsQuery = "DELETE FROM StatRep_Data Where SRid  = '" + selectedfwd + "'"
+      #      cur.execute(rowsQuery)
+      #      conn.commit()
+        #    cur.close()
+        #
+        #    selectedfwd = ""
+        #    self.loadData()
 
-        else:
-            print("Cancel Button is pressed.")
-            selectedfwd = ""
-            acklist = ""
-            return
+       # else:
+       #     print("Cancel Button is pressed.")
+       #     selectedfwd = ""
+        #    acklist = ""
+        #    return
 
         #QMessageBox.question(self, '', "You are about to permanently delete record :"+selectedfwd+" are you sure you want to continue ?", QMessageBox.Yes | QMessageBox.No, QMessageBox.No)
 
@@ -473,7 +492,7 @@ class Ui_FormStatack(object):
         #else :
         #    self.closeapp()
 
-        conn.close()
+       # conn.close()
 
 
 
