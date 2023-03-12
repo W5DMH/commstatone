@@ -409,7 +409,7 @@ class Ui_MainWindow(QWidget):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "CommStat Ver 1.0.0"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "CommStat Ver 1.0.1"))
         self.actionFilter.setText(_translate("MainWindow", "DISPLAY FILTER"))
         self.actionData.setText(_translate("MainWindow", "DATA MANAGER"))
         self.label.setText(_translate("MainWindow", "TextLabel Marquee"))
@@ -931,8 +931,8 @@ class Ui_MainWindow(QWidget):
 
                 popup = folium.Popup(iframe,
                                      min_width=100, max_width=160)
-                print("status :"+status+" yellow: "+yellow+" red : "+red+" green : "+green)
-                print("starting if loop")
+                #print("status :"+status+" yellow: "+yellow+" red : "+red+" green : "+green)
+                #print("starting if loop")
 
                 if red == True:
                     red = "3"
@@ -951,34 +951,34 @@ class Ui_MainWindow(QWidget):
                     color = "orange"
                     radius = 40
                     filler = True
-                    print("this is yellow 2 "+yellow)
+                    #print("this is yellow 2 "+yellow)
                 elif "2" in status and yellow == "0":
                     color = ""
                     radius = 40
                     filler = False
-                    print("this is NOT yellow 2 " +yellow)
+                    #print("this is NOT yellow 2 " +yellow)
 
                 elif "3" in status and red == "3":
                     color = "red"
                     radius = 40
                     filler = True
-                    print("this is red" +red)
+                    #print("this is red" +red)
                 elif "3" in status and red == "0":
                     color = ""
                     radius = 40
                     filler = False
-                    print("this is NOT red" + red)
+                    #print("this is NOT red" + red)
 
                 elif "1" in status and green == "1":
                     color = "green"
                     radius = 6
                     filler = True
-                    print("this is green" +green)
+                    #print("this is green" +green)
                 elif "1" in status and green == "0":
                     color = ""
                     radius = 6
                     filler = False
-                    print("this is NOT green" +green)
+                    #print("this is NOT green" +green)
 
 
 

@@ -1,5 +1,6 @@
 import os.path
 from configparser import ConfigParser
+import js8callAPIsupport
 from PyQt5.QtWidgets import QMessageBox
 from PyQt5 import QtCore
 from PyQt5.QtCore import QDateTime, Qt
@@ -12,6 +13,8 @@ import time
 import psutil
 import platform
 import maidenhead as mh
+import subprocess
+import sys
 os.system('')
 OS_Directed =""
 
@@ -414,6 +417,37 @@ def parseDirected():
                     #prYellow("Attempting to add or update callsign "+callsign+" in members list")
 
                     continue
+
+                if "CS?" in str1:  # THIS IS CS RESPONSE
+
+                    arr = str1.split('\t')
+                    utc = arr[0]
+                    callsignmix = arr[4]
+                    arr2 = callsignmix.split(',')
+                    count = len(arr) + len(arr2)
+                    #print(str(count))
+                    if count != 6:
+                        continue
+                    #id = arr2[1]
+                    callsignlong = arr2[0]
+                    arr3 = callsignlong.split(':')
+                    callsignlg = arr3[0]
+                    arr4 = callsignlg.split('/')
+                    callsign = arr4[0]
+                    #color = arr2[2]
+                    #marquee = arr2[3]
+                    prYellow("Received CS Request to be responsed to - from "+callsign)
+                    subprocess.run([sys.executable, "csresponder.py" , utc])
+
+
+
+
+
+                    #prGreen("Transmitted CS1 Capable")
+
+                    # prYellow("Attempting to add or update callsign "+callsign+" in members list")
+
+                    continue
                 
                 
                 if "{~%}" in str1:  # THIS IS CHECKIN
@@ -586,6 +620,7 @@ def parseDirected():
             print("Received string failed index criteria, msg not parsed into database \n \n")
             continue
 
+
 def checkIfProcessRunning(processName):
     '''
     Check if there is any running process that contains the given name processName.
@@ -609,6 +644,9 @@ now = (now.toUTC().toString("yyyy-MM-dd HH:mm:ss"))
 
 #now = datetime.now()
 print("Datareader stopped :"+now)
+
+
+
 def runreaders():
     while True:
         getConfig()

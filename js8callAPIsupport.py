@@ -34,7 +34,7 @@ class js8CallUDPAPICalls:
 
     def __init__(self, serverip, serverport):
         self.listen = (serverip, serverport)
-        print(serverip, serverport)
+        #print(serverip, serverport)
 
     def sendMessage(self, messageType, messageText):
 
@@ -42,7 +42,7 @@ class js8CallUDPAPICalls:
         self.sock.bind(self.listen)
 
         content, addr = self.sock.recvfrom(65500)
-        print('server ip and port:', ':'.join(map(str, addr)))
+        #print('server ip and port:', ':'.join(map(str, addr)))
 
         try:
             message = json.loads(content)
