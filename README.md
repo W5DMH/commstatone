@@ -2,12 +2,12 @@
  # CommStatOne Ver 1.0.1 Released 03/12/23
 <h3 style="color: #4485b8;">CommStat One Ver 1.0.1 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatX/blob/main/CommStatXBeta.png?raw=true" alt="CommStat One Ver 1.0.1" width="300" height="170" /></h3>
 
-CommstatX is a Python version of the CommStat software <b>designed to run on on Win10 AND Linux</b><br>
+Commstat One is a Python version of the CommStat software <b>designed to run on on Win10 AND Linux</b><br>
 <br><br>
 <b>NOTE : ALL USERS MUST RUN INSTALL ON THIS VERSION!<br></b>
 <br>
 
-<b>Commstatx WINDOWS INSTALL PROCEDURE</B>
+<b>Commstat One WINDOWS INSTALL PROCEDURE</B>
 <br>
 NOTE : Saavy users can "git clone https://github.com/W5DMH/commstatone.git"
 <br>
@@ -20,7 +20,7 @@ NOTE : Saavy users can "git clone https://github.com/W5DMH/commstatone.git"
 <br>
  <br>
  
-<b>Commstatx LINUX INSTALL PROCEDURE (Mint 20.03 & 21.1 Supported, Pi4 64bit may work)</B><br>
+<b>Commstat One LINUX INSTALL PROCEDURE (Mint 20.03 & 21.1 Supported, Pi4 64bit may work)</B><br>
 NOTE : Saavy users can "git clone https://github.com/W5DMH/commstatone.git"<br>
  <b>Type : cd commstatone <br>
  type : chmod +x linuxinstall.sh <br>
