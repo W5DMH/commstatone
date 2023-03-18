@@ -437,7 +437,7 @@ class Ui_FormStatRep(object):
             return
 
 
-        if not re.match('[AKNW][A-Z]{0,2}[0-9][A-Z]{1,3}', call):
+        if not re.match('[AKNWV][A-Z]{0,2}[0-9][A-Z]{1,3}', call):
             msg = QMessageBox()
             msg.setWindowTitle("CommStatX error")
             msg.setText("Does not meet callsign structure!")
@@ -751,7 +751,7 @@ class Ui_FormStatRep(object):
             x = msg.exec_()  # this will show our messagebox
             return
 
-        if not re.match('[AKNW][A-Z]{0,2}[0-9][A-Z]{1,3}', call):
+        if not re.match('[AKNWV][A-Z]{0,2}[0-9][A-Z]{1,3}', call):
             msg = QMessageBox()
             msg.setWindowTitle("CommStatX error")
             msg.setText("Does not meet callsign structure!")
