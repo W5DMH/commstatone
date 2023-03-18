@@ -409,7 +409,7 @@ class Ui_MainWindow(QWidget):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "CommStat Ver 1.0.1"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "CommStat Ver 1.0.2"))
         self.actionFilter.setText(_translate("MainWindow", "DISPLAY FILTER"))
         self.actionData.setText(_translate("MainWindow", "DATA MANAGER"))
         self.label.setText(_translate("MainWindow", "TextLabel Marquee"))
