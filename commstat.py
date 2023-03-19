@@ -63,7 +63,7 @@ bull1 = 1
 bull2 = 3
 OS_Directed = ""
 
-statelist = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'DN', 'DM', 'DL', 'EN', 'EM', 'EL', 'FN', 'FM']
+statelist = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'CO', 'DN', 'DM', 'DL', 'DO', 'EN', 'EM','EL','EO','FN','FM','FO']
 start = '2023-01-01 05:00'
 end = '2030-02-23 00:56'
 green = True
@@ -409,7 +409,7 @@ class Ui_MainWindow(QWidget):
 
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
-        MainWindow.setWindowTitle(_translate("MainWindow", "CommStat Ver 1.0.2"))
+        MainWindow.setWindowTitle(_translate("MainWindow", "CommStat Ver 1.0.3"))
         self.actionFilter.setText(_translate("MainWindow", "DISPLAY FILTER"))
         self.actionData.setText(_translate("MainWindow", "DATA MANAGER"))
         self.label.setText(_translate("MainWindow", "TextLabel Marquee"))

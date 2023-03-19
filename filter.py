@@ -35,7 +35,7 @@ port = ""
 serverip = ""
 serverport = ""
 
-statelist = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'DN', 'DM', 'DL', 'EN', 'EM', 'EL', 'FN', 'FM']
+statelist = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'CO', 'DN', 'DM', 'DL', 'DO', 'EN', 'EM','EL','EO','FN','FM','FO']
 start = ""
 end = ""
 green = True
@@ -196,7 +196,7 @@ class Ui_FilterForm(object):
         # QListWidgetItem("Geeks", listWidget)
         # QListWidgetItem("For", listWidget)
         # QListWidgetItem("Geeks", listWidget)
-        states = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'DN', 'DM', 'DL', 'EN', 'EM', 'EL', 'FN', 'FM']
+        states = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'CO', 'DN', 'DM', 'DL', 'DO', 'EN', 'EM','EL','EO','FN','FM','FO']
         for state in states:
             QListWidgetItem(state, self.listWidget)
 
@@ -274,7 +274,7 @@ class Ui_FilterForm(object):
         green = "1"
         yellow = "2"
         red = "3"
-        grids = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'DN', 'DM', 'DL', 'EN', 'EM', 'EL', 'FN', 'FM']
+        grids = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'CO', 'DN', 'DM', 'DL', 'DO', 'EN', 'EM','EL','EO','FN','FM','FO']
         self.setInfo()
         self.MainWindow.close()
 
@@ -310,7 +310,7 @@ class Ui_FilterForm(object):
 
     def stateclearsel(self):
         global statelist
-        statelist = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'DN', 'DM', 'DL', 'EN', 'EM', 'EL', 'FN', 'FM']
+        statelist = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'CO', 'DN', 'DM','DL','DO', 'EN', 'EM','EL','EO','FN','FM','FO']
         msg = QMessageBox()
         msg.setWindowTitle("CommStat Report Grid Filter Cleared")
         msg.setText("Grid Filter has been cleared, please reload display")
