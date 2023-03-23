@@ -339,6 +339,18 @@ class Ui_FormSettings(object):
         self.comboBoxState.addItem('WV')
         self.comboBoxState.addItem('WI')
         self.comboBoxState.addItem('WY')
+        self.comboBoxState.addItem('ON')
+        self.comboBoxState.addItem('PE')
+        self.comboBoxState.addItem('NS')
+        self.comboBoxState.addItem('NB')
+        self.comboBoxState.addItem('QC')
+        self.comboBoxState.addItem('MB')
+        self.comboBoxState.addItem('SK')
+        self.comboBoxState.addItem('AB')
+        self.comboBoxState.addItem('BC')
+        self.comboBoxState.addItem('YT')
+        self.comboBoxState.addItem('NT')
+        self.comboBoxState.addItem('NU')
 
         self.retranslateUi(FormSettings)
         QtCore.QMetaObject.connectSlotsByName(FormSettings)
@@ -371,7 +383,7 @@ class Ui_FormSettings(object):
         self.label_8.setText(_translate("FormSettings", "Server :"))
         self.label_9.setText(_translate("FormSettings", "UDP Port :"))
         self.lineEdit_8.setText(_translate("FormSettings", "2242"))
-        self.label_11.setText(_translate("FormSettings", "Enter State :"))
+        self.label_11.setText(_translate("FormSettings", "Enter State or Prov :"))
 
 
         self.lineEdit.textChanged.connect(self.callval)
@@ -619,7 +631,7 @@ class Ui_FormSettings(object):
         green = "1"
         yellow = "2"
         red = "3"
-        grids = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'DN', 'DM', 'DL', 'EN', 'EM', 'EL', 'FN', 'FM']
+        grids = ['AP', 'AO', 'BO', 'CN', 'CM', 'CO', 'DN', 'DM', 'DL', 'DO', 'EN', 'EM','EL','EO','FN','FM','FO''AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'DN', 'DM', 'DL', 'EN', 'EM', 'EL', 'FN', 'FM']
 
 
         # Assume we need 2 sections in the config file, let's call them USERINFO and SERVERCONFIG
