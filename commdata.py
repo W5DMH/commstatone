@@ -23,7 +23,7 @@ import maidenhead as mh
 start = ""
 end = ""
 loadflag = 0
-statelist = ['CN', 'CM', 'DN', 'DM', 'DL', 'EN', 'EM', 'EL', 'FN', 'FM']
+statelist = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'CO', 'DN', 'DM', 'DL', 'DO', 'EN', 'EM','EL','EO','FN','FM','FO']
 
 class UI(QMainWindow):
     def __init__(self):
@@ -247,7 +247,7 @@ class UI(QMainWindow):
         #QListWidgetItem("Geeks", listWidget)
         #QListWidgetItem("For", listWidget)
         #QListWidgetItem("Geeks", listWidget)
-        states = ['CN', 'CM', 'DN', 'DM', 'DL', 'EN', 'EM', 'EL', 'FN', 'FM']
+        states = ['AP', 'AO', 'AO', 'BO', 'CN', 'CM', 'CO', 'DN', 'DM', 'DL', 'DO', 'EN', 'EM','EL','EO','FN','FM','FO']
         for state in states:
             QListWidgetItem(state ,self.listWidget)
 
