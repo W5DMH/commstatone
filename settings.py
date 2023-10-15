@@ -400,9 +400,9 @@ class Ui_FormSettings(object):
         grd = self.lineEdit_5
         grd.setMaxLength(6)
         grp1 = self.lineEdit_3
-        grp1.setMaxLength(7)
+        grp1.setMaxLength(9)
         grp2 = self.lineEdit_4
-        grp2.setMaxLength(7)
+        grp2.setMaxLength(9)
 
         self.oscheck()
         self.getConfig()
