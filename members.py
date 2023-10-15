@@ -111,7 +111,7 @@ class Ui_FormMembers(object):
         mapper = QWebEngineView()
         coordinate = (38.8199286, -90.4782551)
         m = folium.Map(
-            tiles='Stamen Terrain',
+            #tiles='Stamen Terrain',
             zoom_start=4,
             location=coordinate
 
