@@ -14,7 +14,6 @@ import io
 import folium
 import sqlite3
 import os
-
 import filter
 import settings
 from settings import Ui_FormSettings
