@@ -1,6 +1,6 @@
 # commstatone
- # CommStatOne Ver 1.0.4 Released 03/23/23
-<h3 style="color: #4485b8;">CommStat One Ver 1.0.4 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatX/blob/main/CommStatXBeta.png?raw=true" alt="CommStat One Ver 1.0.4" width="300" height="170" /></h3>
+ # CommStatOne Ver 1.0.5 Released 10/15/23
+<h3 style="color: #4485b8;">CommStat One Ver 1.0.5 add on software for JS8Call groups&nbsp;&nbsp;<img src="https://github.com/W5DMH/CommStatX/blob/main/CommStatXBeta.png?raw=true" alt="CommStat One Ver 1.0.5" width="300" height="170" /></h3>
 
 Commstat One is a Python version of the CommStat software <b>designed to run on on Win10 AND Linux</b><br>
 <br><br>
@@ -32,7 +32,7 @@ NOTE : Saavy users can "git clone https://github.com/W5DMH/commstatone.git"<br>
 <br><br><br>
 =======
  
-<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/commstatone/raw/main/commstatone.zip" target="_blank" rel="noopener">CommStat One 1.0.4 for Win10 & Win11 & Linux </a></h3>
+<h3>Here is a link to the archive file:&nbsp;<a href="https://github.com/W5DMH/commstatone/raw/main/commstatone.zip" target="_blank" rel="noopener">CommStat One 1.0.5 for Win10 & Win11 & Linux </a></h3>
 
 
 
