@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0da83298-bc6f-4b7a-81f2-177b62bce435" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/commstat.py" beforeDir="false" afterPath="$PROJECT_DIR$/commstat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/copyDIRECTED.txt" beforeDir="false" afterPath="$PROJECT_DIR$/copyDIRECTED.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/datareader.py" beforeDir="false" afterPath="$PROJECT_DIR$/datareader.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/map.html" beforeDir="false" afterPath="$PROJECT_DIR$/map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/members.py" beforeDir="false" afterPath="$PROJECT_DIR$/members.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/traffic.db3" beforeDir="false" afterPath="$PROJECT_DIR$/traffic.db3" afterDir="false" />
-    </list>
+    <list default="true" id="0da83298-bc6f-4b7a-81f2-177b62bce435" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
